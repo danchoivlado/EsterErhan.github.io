@@ -29,6 +29,6 @@ function channelSplit(elem) {
 
 const text = document.getElementById('ester-type').value;
 if(text === "Nebet tepe"){
-   document.window.location.replace("https://danchoivlado.github.io/ester.github.io/main.html");
+   window.location.href = "https://danchoivlado.github.io/ester.github.io/main.html";
 }
  }
