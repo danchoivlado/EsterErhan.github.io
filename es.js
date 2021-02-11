@@ -20,4 +20,15 @@ function channelSplit(elem) {
  
  channelSplit(document.getElementById("text"));
  
- 
+ document.getElementById('ester-form').addEventListener('submit', checkAnswer)
+
+ document.getElementById('ester-a').addEventListener('click', checkAnswer)
+
+ function checkAnswer(e){
+   e.preventDefault();
+
+const text = document.getElementById('ester-type').value;
+if(text === "Nebet tepe"){
+   window.location.replace("new target URL");
+}
+ }
