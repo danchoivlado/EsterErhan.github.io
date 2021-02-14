@@ -28,7 +28,27 @@ function channelSplit(elem) {
    e.preventDefault();
 
 const text = document.getElementById('ester-type').value;
-if(text === "Nebet tepe"){
-   window.location.href = "https://danchoivlado.github.io/ester.github.io/main.html";
+let right;
+
+switch (text) {
+   case "Джамбаз тепе":
+      right = true;
+      break;
+   case "Djambaz tepe":
+      right = true;
+      break;
+      case "djambaz tepe":
+      right = true;
+      break;
+   case "джамбаз тепе":
+      right = true;
+      break;
+   default:
+      right = false;
+      break;
+}
+
+if(right){
+   window.location.href = "https://danchoivlado.github.io/EsterErhan.github.io/main.html";
 }
  }
